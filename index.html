@@ -1,0 +1,43 @@
+<!--Doc Type HTML-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel = 'stylesheet' href = "style.css">
+    <link rel = "shortcut icon" type = "image/png" href = "favicon.png">
+    <script src="https://kit.fontawesome.com/fce535b790.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Container for music player-->
+    <div class="player-container">
+        <!--Container for Images-->
+        <div class="image-container">
+            <img src="images/image-1.jpg" alt="oops!Sorry, No Image">
+        </div>
+        <!--Audio Element-->
+        <audio src="clips/audio-1.mp3"></audio>
+        <!--Audio Description-->
+        <h2 id = "title">Fun Life</h2>
+        <h3 id = "artist">Zakhar Valaha</h3>
+        <!--Current-time and Duration of audio clip-->
+        <div class="content-wrapper">
+            <span id = "current-time">0:00</span>
+            <span id = "duration">2:06</span>
+        </div>
+        <!--Container for Progess Bar-->
+        <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+        </div>
+        <!--Player Controls-->
+        <div class="player-controls">
+        <i class="fa-solid fa-backward" id = "previous" title = "Previous"></i>
+        <i class="fa-solid fa-circle-play main" id = "play" title = "Play"></i>
+        <i class="fa-solid fa-forward" id = "next" title = "Next"></i>
+        </div>
+
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>
